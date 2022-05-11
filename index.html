@@ -128,7 +128,7 @@
 <li>Setup a standalone patient access app.</li>
 </ul>
 
-<p>Note: This tutorial is in the process of being updated for the newer version of FHIR - R4. Outside of this tutorial, the use of R4 over DSTU2 is encouraged.</p>
+<p>Note: This tutorial is in the process of being updated for the newer version of FHIR - R4. Outside of this tutorial, the use of R4 over R4 is encouraged.</p>
 
 <h1 id="prerequisites">Prerequisites</h1>
 
@@ -237,7 +237,7 @@ GitHub Pages sites have a limit of 10 builds per hour, so if your page isn&rsquo
 </tr>
 <tr>
 <td>FHIR Spec</td>
-<td><code class="prettyprint">dstu2</code> The latest spec version supported by Cerner.</td>
+<td><code class="prettyprint">R4</code> The latest spec version supported by Cerner.</td>
 </tr>
 <tr>
 <td>Authorized</td>
@@ -693,7 +693,7 @@ Once these relevant files and HTML tags are included inside each view of the app
 <ul>
 <li>Go to <a href="https://launch.smarthealthit.org">https://launch.smarthealthit.org</a></li>
 <li>In the <strong>App Launch Options</strong> select <strong>Launch Type</strong> as &lsquo;Provider EHR Launch&rsquo; with &lsquo;Simulate launch within the EHR user interface&rsquo; box checked. This is the default.</li>
-<li>Under <strong>FHIR Version</strong>, select &lsquo;R2 (DSTU2)&rsquo;</li>
+<li>Under <strong>FHIR Version</strong>, select &lsquo;R2 (R4)&rsquo;</li>
 <li>In the <strong>Patient(s)</strong> section, click the drop down button to open a list of patients in a new pop up window. Select any patient and click &lsquo;OK&rsquo;. This should populate the patient ID in the field.</li>
 <li>In the <strong>Provider(s)</strong> section, click the drop down button to open a list of providers. Select any provider to populate the Provider ID in the field.</li>
 <li>For the purpose of this tutorial we will leave the <strong>Advanced</strong> options as is.</li>
@@ -753,7 +753,7 @@ https://<code class="prettyprint">&lt;gh-username&gt;</code>.github.io/smart-on-
 </tr>
 <tr>
 <td>FHIR Spec</td>
-<td><code class="prettyprint">dstu2</code> The latest spec version supported by Cerner.</td>
+<td><code class="prettyprint">R4</code> The latest spec version supported by Cerner.</td>
 </tr>
 <tr>
 <td>Authorized</td>
@@ -802,14 +802,14 @@ https://<code class="prettyprint">&lt;gh-username&gt;</code>.github.io/smart-on-
 <blockquote>
 <p>Cerner&rsquo;s Sandbox Patient Access Endpoint:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight plaintext"><code>https://fhir-myrecord.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d
+<div class="highlight"><pre class="highlight plaintext"><code>https://fhir-myrecord.cerner.com/R4/ec2458f2-1e24-41c8-b71b-0e701af7583d
 </code></pre></div>
 <p>The <code class="prettyprint">iss</code> value in the query parameter represents the URL for our Sandbox Patient Access endpoint.  This value tells the app where to look for the <code class="prettyprint">metadata</code> endpoint, which contains the authorization endpoints that the app needs to call.</p>
 
 <blockquote>
 <p>Launch URL:</p>
 </blockquote>
-<div class="highlight"><pre class="highlight plaintext"><code>  https://&lt;gh-username&gt;.github.io/smart-on-fhir-tutorial/example-smart-app/launch-patient.html?iss=https://fhir-myrecord.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d
+<div class="highlight"><pre class="highlight plaintext"><code>  https://&lt;gh-username&gt;.github.io/smart-on-fhir-tutorial/example-smart-app/launch-patient.html?iss=https://fhir-myrecord.cerner.com/R4/ec2458f2-1e24-41c8-b71b-0e701af7583d
 </code></pre></div>
 <p>Since this app is a standalone app, it does not need to be launched by the EHR or patient portal (code console).</p>
 
